@@ -9,11 +9,15 @@ body {
   font-family: sans-serif;
 }
 
-header, main {
+header {
   color: #F2F2F2;
   max-width: 80%;
   padding: 1.5rem 0;
   margin: auto;
+  position: relative; /* Para posicionar el menú correctamente */
+  display: flex; /* Usar flex para alinear elementos */
+  justify-content: space-between; /* Espacio entre el título y el menú */
+  align-items: center; /* Centra verticalmente */
 }
 
 img {
@@ -51,5 +55,87 @@ img:hover {
   .gallery {
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       grid-template-rows: repeat(auto-fill, minmax(300px, 1fr)); 
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex; /* Muestra el menú como una fila en pantallas grandes */
+  justify-content: flex-end; /* Alinea el menú a la derecha */
+  margin-left: auto; /* Empuja el menú hacia la derecha */
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu li a:hover {
+  background-color: #575757;
+}
+
+.menu-toggle {
+  display: none; /* Oculta el checkbox en pantallas grandes */
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Oculta el ícono de hamburguesa inicialmente */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+      position: absolute;
+      top: 60px; /* Espacio debajo del header */
+      right: 0;
+      background-color: #333;
+      width: 100%;
+  }
+
+  .menu li {
+      margin: 10px 0; /* Espaciado vertical entre los elementos */
+  }
+
+  /* Muestra el menú cuando el checkbox está marcado */
+  .menu-toggle:checked + .hamburger + .nav .menu {
+      display: flex; 
+  }
+
+  .hamburger {
+      display: block; /* Muestra el ícono de hamburguesa en pantallas pequeñas */
+  }
+}
+
+/* Asegúrate de mostrar el menú en pantallas grandes */
+@media (min-width: 769px) {
+  .menu {
+      display: flex; /* Muestra el menú como una fila en pantallas grandes */
+  }
+
+  .menu-toggle {
+      display: none; /* Asegúrate de que el checkbox esté oculto en pantallas grandes */
+  }
+
+  .hamburger {
+      display: block; /* Muestra el ícono de hamburguesa en pantallas grandes */
+  }
+
+  /* Oculta el menú por defecto en pantallas grandes */
+  .menu {
+      display: none; /* Oculta el menú por defecto en pantallas grandes */
+  }
+
+  /* Muestra el menú cuando el checkbox está marcado */
+  .menu-toggle:checked + .hamburger + .nav .menu {
+      display: flex; 
   }
 }
