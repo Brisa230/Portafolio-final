@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #070000;
+  background: rgba(47, 47, 47, 0.98);
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  height: auto; 
+  margin: 20px auto 50px auto;
+  box-shadow: 0 0 30px #000;
+  background-image: linear-gradient(rgba(40, 40, 40, 0.7) 50%, rgba(0, 0, 0, 0.90) 80%), url();
+  background-clip: cover;
+  background-position: left top, 0 0;
+  background-repeat: no-repeat;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 5em;
+  position: absolute;
+  left: 60px;
+  bottom: 100px;
+  line-height: 0.9em;
+}
+
+.hashtags {
+  display: table;
+  border-top: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  height: 75px;
+  right: 300px;
+  padding-right: 40px;
+  margin-bottom: 0;
+}
+
+.hashtags ul {
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hashtags ul li {
+  display: inline;
+  margin-right: 10px;
+  color: #fff;
+  list-style: none;
+  font-size: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.desc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 300px;
+  height: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  overflow-y: auto; 
+}
+
+.padding-left {
+  padding-left: 50px;
+}
+
+.desc h1 {
+  color: #000;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.like {
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  color: rgb(9, 180, 236);
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.like + p {
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.desc ul li:last-child {
+  display: table;
+  background-color: #000000;
+}
+
+li p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+li img {
+  transition: opacity 0.5s;
+  opacity: 0.3;
+  width: 75px;
+  height: 75px;
+}
+
+ul li img:hover {
+  opacity: 1;
+}
+
+footer {
+  color: #4c4c4c;
+  font-weight: 400;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+}
+
+
+@media (max-width: 768px) {
+  .main h2 {
+    font-size: 3em; 
+    left: 20px; 
+    bottom: 50px; 
+  }
+
+  .desc {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .hashtags {
+    right: 20px; 
+  }
+
+  .padding-left {
+    padding-left: 20px; 
+  }
+
+  .like + p {
+    margin-right: 20px; 
+  }
+}
+
