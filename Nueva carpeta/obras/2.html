@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+        .video-container {
+            width: 80%; 
+            margin: 0 auto; 
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="main">
             <h2>Patitas en<br>la calle</h2>
             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                <!-- Indicadores -->
+                
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -24,36 +31,33 @@
 
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="../obras/fotos/chucho.jpg" alt="Ilustracion" class="img-responsive" style="width:100%; height:auto;">
+                        <img src="../obras/fotos/patitas/1.png" alt="Ilustracion" class="img-responsive" style="width:100%; height:auto;">
                         <div class="carousel-caption">
-                            <h3>Gusti Ilustración</h3>
-                            <p>Exposición</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../obras/fotos/ropa.JPG" alt="fotografia" class="img-responsive" style="width:100%; height:auto;">
+                        <img src="../obras/fotos/patitas/2.png" alt="fotografia" class="img-responsive" style="width:100%; height:auto;">
                         <div class="carousel-caption">
-                            <h3>Xataka Fotografía</h3>
-                            <p>Concurso</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e86e8b59124321.5a15e4ccd8622.jpg" alt="pintura" class="img-responsive" style="width:100%; height:auto;">
+                        <img src="../obras/fotos/patitas/3.png" alt="pintura" class="img-responsive" style="width:100%; height:auto;">
                         <div class="carousel-caption">
-                            <h3>DoArt Pintura</h3>
-                            <p>Curso</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="https://cdn.dribbble.com/users/324248/screenshots/3978513/planet2_800.jpg" alt="diseno" class="img-responsive" style="width:100%; height:auto;">
+                        <div class="video-container">
+                            <video width="100%" height="auto" controls autoplay muted loop playsinline>
+                                <source src="../obras/fotos/patitas/4.mp4" type="video/mp4">
+                                
+                            </video>
+                        </div>
                         <div class="carousel-caption">
-                            <h3>UX UI Diseño Gráfico</h3>
-                            <p>Curso</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Controles del carrusel -->
+               
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">anterior</span>
@@ -65,18 +69,19 @@
             </div>
 
             <div class="desc">
-                
                 <h1 class="padding-left">Patitas en la calle</h1>
-                <p class="like padding-left">Página Web (2023)
-                    <br> Autores: Daniela, Valeria, Brisa, Gerardo</p>
+                <a href="https://vaaal0.github.io/patitas/"> 
+                    <p class="like padding-left">Pagina Web (2023)</a>
+                        
+                <br> Autores: Daniela, Valeria, Brisa, Gerardo</p>
                 <p class="padding-left">El proyecto es una plataforma interactiva que busca concientizar
                      sobre el abandono de perros y la sobrepoblación en Lerma. Utiliza un mapa interactivo 
                      para contar las historias de cuatro perros callejeros desde su perspectiva, permitiendo 
                      al espectador influir en su destino mediante decisiones. Además, incorpora elementos 
                      audiovisuales, como fotos y videos, para mostrar la dura realidad de estos animales en situación de calle.
-
                 </p>
             </div>
         </div>
     </div>
 </body>
+</html>
